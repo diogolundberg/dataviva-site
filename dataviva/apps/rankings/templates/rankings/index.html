@@ -1,0 +1,104 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="01-index.html">Home</a></li>
+        <li class="active"><span>Ranking</span></li>
+    </ol>
+    <div class="row">
+        <div class="sidebar col-xs-15 col-md-4">
+            <h4>Outros Recursos</h4>
+            <ul class="sub-menu">
+                <li><a href="02-pesquisa-publico.html" title="Visualize rankings">Inicie uma pesquisa</a></li>
+                <li><a href="07-ranking-tabela.html" title="Construa gráficos">Construa gráficos</a></li>
+                <li><a href="18-download-banco-dados2.html" title="Download de banco de dados">Download de banco de dados</a></li>
+            </ul>
+        </div>
+        <div class="main-content col-xs-15 col-md-11">
+            <div class="mod mod-search-boxes">
+                <h1 class="text-center">Visualize rankings</h1>
+                <div class="profile">
+                    <h2 class="text-center">O que você gostaria de rankear?</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xs-15 col-sm-5 item">
+                        <a href="#" data-toggle="modal" data-target="#modal-dataviva-localidade">
+                            <span class="pull-left">Localidades Brasileiras</span>
+                            <img src="imgs/ico-search-localidades.png" class="pull-right" />
+                            <div class="clearfix"></div>
+                            <p class="clearfix">Mostrando as exportações, o emprego e os dados de educação, estatísticas e visualizações sobre a localidade brasileira escolhida.</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-15 col-sm-5 item">
+                        <a href="#" data-toggle="modal" data-target="#modal-dataviva">
+                            <span class="pull-left">Ocupações</span>
+                            <img src="imgs/ico-search-ocupacoes.png" class="pull-right" />
+                            <div class="clearfix"></div>
+                            <p class="clearfix">Mostrando as exportações, o emprego e os dados de educação, estatísticas e visualizações sobre a localidade brasileira escolhida.</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-15 col-sm-5 item">
+                        <a href="#" data-toggle="modal" data-target="#modal-dataviva">
+                            <span class="pull-left">Atividades Econômicas</span>
+                            <img src="imgs/ico-search-atividades.png" class="pull-right" />
+                            <div class="clearfix"></div>
+                            <p class="clearfix">Mostrando as exportações, o emprego e os dados de educação, estatísticas e visualizações sobre a localidade brasileira escolhida.</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-15 col-sm-5 item">
+                        <a href="#" data-toggle="modal" data-target="#modal-dataviva">
+                            <span class="pull-left">Produtos</span>
+                            <img src="imgs/ico-search-produtos.png" class="pull-right" />
+                            <div class="clearfix"></div>
+                            <p class="clearfix">Mostrando as exportações, o emprego e os dados de educação, estatísticas e visualizações sobre a localidade brasileira escolhida.</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-15 col-sm-5 item">
+                        <a href="#" data-toggle="modal" data-target="#modal-dataviva">
+                            <span class="pull-left">Parceiros Comerciais</span>
+                            <img src="imgs/ico-search-parceiros.png" class="pull-right" />
+                            <div class="clearfix"></div>
+                            <p class="clearfix">Mostrando as exportações, o emprego e os dados de educação, estatísticas e visualizações sobre a localidade brasileira escolhida.</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-15 col-sm-5 item">
+                        <a href="#" data-toggle="modal" data-target="#modal-dataviva">
+                            <span class="pull-left">Universidades</span>
+                            <img src="imgs/ico-search-universidades.png" class="pull-right" />
+                            <div class="clearfix"></div>
+                            <p class="clearfix">Mostrando as exportações, o emprego e os dados de educação, estatísticas e visualizações sobre a localidade brasileira escolhida.</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-15 col-sm-5 item">
+                        <a href="#" data-toggle="modal" data-target="#modal-dataviva">
+                            <span class="pull-left">Cursos Ensino Superior</span>
+                            <img src="imgs/ico-search-curso-superior.png" class="pull-right" />
+                            <div class="clearfix"></div>
+                            <p class="clearfix">Mostrando as exportações, o emprego e os dados de educação, estatísticas e visualizações sobre a localidade brasileira escolhida.</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-15 col-sm-5 item">
+                        <a href="#" data-toggle="modal" data-target="#modal-dataviva">
+                            <span class="pull-left">Cursos Básicos</span>
+                            <img src="imgs/ico-search-curso-basico1.png" class="pull-right" />
+                            <div class="clearfix"></div>
+                            <p class="clearfix">Mostrando as exportações, o emprego e os dados de educação, estatísticas e visualizações sobre a localidade brasileira escolhida.</p>
+                        </a>
+                    </div>
+                    <div class="col-xs-15 col-sm-5 item">
+                        <a href="#" data-toggle="modal" data-target="#modal-dataviva">
+                            <span class="pull-left">Saúde</span>
+                            <img src="imgs/ico-search-saude.png" class="pull-right" />
+                            <div class="clearfix"></div>
+                            <p class="clearfix">Mostrando as exportações, o emprego e os dados de educação, estatísticas e visualizações sobre a localidade brasileira escolhida.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
