@@ -1,0 +1,132 @@
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="01-index.html">Home</a></li>
+        <li><a href="07-ranking.html">Rankings</a></li>
+        <li class="active"><span>Visualize rankings</span></li>
+    </ol>
+    <div class="row">
+        <div class="sidebar has-tit col-xs-15 col-md-4">
+            <ul class="nav">
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#ranking-location">Localidade</a>
+                    <ul id="ranking-location" class="sub-menu collapse ">
+                        <li><a href="#" title="Complexidade Econômica">Complexidade Econômica</a></li>
+                        <li><a href="#" title="Maiores Exportadores">Maiores Exportadores</a></li>
+                        <li><a href="#" title="Maiores Importadores">Maiores Importadores</a></li>
+                        <li><a href="#" title="Maiores Empregadores">Maiores Empregadores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#ranking-industry">Atividades econômicas</a>
+                    <ul id="ranking-industry" class="sub-menu collapse ">
+                        <li><a href="#" title="Complexidade Econômica">Complexidade Econômica</a></li>
+                        <li><a href="#" title="Maiores Exportadores">Maiores Exportadores</a></li>
+                        <li><a href="#" title="Maiores Importadores">Maiores Importadores</a></li>
+                        <li><a href="#" title="Maiores Empregadores">Maiores Empregadores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#ranking-occupation">Ocupações</a>
+                    <ul id="ranking-occupation" class="sub-menu collapse ">
+                        <li><a href="#" title="Complexidade Econômica">Complexidade Econômica</a></li>
+                        <li><a href="#" title="Maiores Exportadores">Maiores Exportadores</a></li>
+                        <li><a href="#" title="Maiores Importadores">Maiores Importadores</a></li>
+                        <li><a href="#" title="Maiores Empregadores">Maiores Empregadores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#ranking-product">Produtos</a>
+                    <ul id="ranking-product" class="sub-menu collapse ">
+                        <li><a href="#" title="Complexidade Econômica">Complexidade Econômica</a></li>
+                        <li><a href="#" title="Maiores Exportadores">Maiores Exportadores</a></li>
+                        <li><a href="#" title="Maiores Importadores">Maiores Importadores</a></li>
+                        <li><a href="#" title="Maiores Empregadores">Maiores Empregadores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#ranking-trade-partner">Parceiros comerciais</a>
+                    <ul id="ranking-trade-partner" class="sub-menu collapse ">
+                        <li><a href="#" title="Complexidade Econômica">Complexidade Econômica</a></li>
+                        <li><a href="#" title="Maiores Exportadores">Maiores Exportadores</a></li>
+                        <li><a href="#" title="Maiores Importadores">Maiores Importadores</a></li>
+                        <li><a href="#" title="Maiores Empregadores">Maiores Empregadores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#ranking-university">Universidades</a>
+                    <ul id="ranking-university" class="sub-menu collapse ">
+                        <li><a href="#" title="Complexidade Econômica">Complexidade Econômica</a></li>
+                        <li><a href="#" title="Maiores Exportadores">Maiores Exportadores</a></li>
+                        <li><a href="#" title="Maiores Importadores">Maiores Importadores</a></li>
+                        <li><a href="#" title="Maiores Empregadores">Maiores Empregadores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#ranking-major">Cursos</a>
+                    <ul id="ranking-major" class="sub-menu collapse ">
+                        <li><a href="#" title="Complexidade Econômica">Complexidade Econômica</a></li>
+                        <li><a href="#" title="Maiores Exportadores">Maiores Exportadores</a></li>
+                        <li><a href="#" title="Maiores Importadores">Maiores Importadores</a></li>
+                        <li><a href="#" title="Maiores Empregadores">Maiores Empregadores</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#ranking-basic-course">Cursos básicos</a>
+                    <ul id="ranking-basic-course" class="sub-menu collapse ">
+                        <li><a href="#" title="Complexidade Econômica">Complexidade Econômica</a></li>
+                        <li><a href="#" title="Maiores Exportadores">Maiores Exportadores</a></li>
+                        <li><a href="#" title="Maiores Importadores">Maiores Importadores</a></li>
+                        <li><a href="#" title="Maiores Empregadores">Maiores Empregadores</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content col-xs-15 col-md-11">
+            <div class="institucional search">
+                <h2>Visualize rankings</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-5">
+                        <h3>Top exportadores do Brasil</h3>
+                    </div>
+                    <div class="col-xs-12 col-sm-7">
+                        <div class="form-group">
+                            <label for="select-1">Ordenar por</label>
+                            <select name="language" class="input-md">
+                                <option value="Exportações">Exportações</option>
+                                <option value="Exportações" selected="selected">Exportações</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <form action="" class="form-dataviva form-inline filter">
+                    <div class="form-group">
+                        <i class="fa fa-search"></i>
+                        <input id="field-search" type="text" class="busca form-control" placeholder="Busque dentro da tabela" />
+                    </div>
+                    <div class="form-group">
+                        <strong class="pre-tit">Localidade</strong>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-sm btn-default">Estados</button>
+                            <button type="button" class="btn btn-sm btn-default">Mesorregiões</button>
+                            <button type="button" class="btn btn-sm btn-default">Microrregiões</button>
+                            <button type="button" class="btn btn-sm btn-default">Municípios</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select name="language">
+                            <option value="2013">2013</option>
+                            <option value="2014" selected="selected">2014</option>
+                        </select>
+                    </div>
+
+                </form>
+                <img src="http://placehold.it/1200x300?text=graph-area" class="img-responsive">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

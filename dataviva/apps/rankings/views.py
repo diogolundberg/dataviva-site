@@ -35,3 +35,7 @@ def pull_lang_code(endpoint, values):
 @mod.route('/')
 def index():
     return render_template('rankings/index.html', body_class='rankings')
+
+@mod.route('/view')
+def view():
+    return render_template('rankings/view.html', body_class='rankings')
